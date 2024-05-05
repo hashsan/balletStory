@@ -1,0 +1,98 @@
+/*
+Theme Name: balletStory
+Theme URI: http://example.com/your-theme-uri/
+Description:A balletStory is simple theme. The mobile target.
+Author: balletStory Admin
+Author URI: http://example.com/
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: ballet
+*/
+
+/* Resetting default browser styles */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* Set line height */
+body {
+    line-height: 1;
+}
+
+/* Remove list styles */
+ol, ul {
+    list-style: none;
+}
+
+/* Set default link color */
+a {
+    color: #0073e6;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Main structure */
+#header {
+    /* Header styles */
+}
+
+#main {
+    /* Main content styles */
+}
+
+#main .main-content {
+    /* Styles for the main content area */
+}
+
+#main .main-widget-area {
+    /* Styles for the main widget area */
+}
+
+#footer {
+    /* Footer styles */
+}
+
+/* Widget styles */
+.widget {
+    /* Widget styles */
+}
+
+/* Additional classes or IDs can be styled here */
+
+/* Header Widget Area */
+#header .widget {
+    /* ウィジェットのスタイル */
+}
+
+/* Main Widget Area */
+#main .widget {
+    /* ウィジェットのスタイル */
+}
+
+/* Footer Widget Area */
+#footer .widget {
+    /* ウィジェットのスタイル */
+}
+
+
