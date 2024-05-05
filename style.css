@@ -34,22 +34,17 @@ time, mark, audio, video {
 
 /* Set line height */
 body {
-    line-height: 1;
 }
 
 /* Remove list styles */
 ol, ul {
-    list-style: none;
 }
 
 /* Set default link color */
 a {
-    color: #0073e6;
-    text-decoration: none;
 }
 
 a:hover {
-    text-decoration: underline;
 }
 
 /* Main structure */
@@ -94,5 +89,116 @@ a:hover {
 #footer .widget {
     /* ウィジェットのスタイル */
 }
+
+
+:root{
+  --font-family:system-ui,sans-serif;
+  --word:#000;
+  --impact:#c86;
+  --hover:#f26;
+  --impact-border:2px solid var(--impact);
+  --outer-back:#BFB2A3;
+  --system-back:#f4f0f0;
+}
+
+*{box-sizing:border-box;}
+p,h1,h2,h3,h4,h5{
+  margin:0;
+  padding:0.5rem 0;
+}
+h1,h2,h3,h4,h5{
+  font-size:1.2rem;
+  font-weight:bold;
+}
+h2:before,h3:before,h4:before,h5:before{
+  content:'# ';
+  color:var(--impact);
+}
+
+mark,em,strong{
+  font-style:normal;
+  font-weight:bold;
+}
+
+a{
+  color:inherit;
+  text-decoration:unset;
+  border-bottom:var(--impact-border);
+  transition:0.5s;
+}
+a:hover,a:focus{
+  color:var(--hover);
+  border-color:var(--hover);
+}
+/*
+a[href*="http"]:after{
+  content:' [外部リンク]';
+  font-size:0.6em;
+}
+*/
+a[target="_blank"]:after {
+  /* 外部リンクが新しいタブで開かれる場合に適用されるスタイル */
+  content:' [外部リンク]';
+  font-size:0.6em;
+	
+}
+
+
+
+html{
+  font-family:var(--font-family);
+  font-size:18px;
+  line-height:1.6;
+}
+
+body{
+  margin:auto;
+  max-width:360px;
+  color:var(--word);
+  background:var(--outer-back);
+}
+
+main{
+  background:#fff;
+  padding:0 1rem;  
+}
+
+header,footer{
+  text-align:center;
+  font-size:0.8em;
+  background:#fafafa;
+  background:var(--system-back);
+  
+}
+
+header a,footer a{
+  border-bottom:unset;
+}
+
+img{
+  margin:auto;
+  display:flex;
+  text-align:center;
+  width:200px;
+  height:100%;
+  object-fit:cover;
+  border-radius:4px;
+  box-shadow:1px 1px 30px rgba(0,0,0,0.1)
+}
+header img,footer img{
+  width:100%;
+  max-height:180px;
+  border-radius:unset;
+  box-shadow:unset;
+}
+a:has(img),
+p:has(img){
+  padding:0;
+}
+
+p:has(a) + p:has(a){
+  padding-top:unset;/*light house tap*/
+}
+
 
 
